@@ -1,0 +1,17 @@
+{
+  "name": "hual-web-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next build && next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "9.3.4",
+    "postcss-px-to-viewport": "^1.1.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}

@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+  color: blue;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  color: #333;
+}
+html,body{
+  height: 100%;
+}
+/* 小标题 */
+h4 {
+  margin: 75px 0 55px;
+  text-align: center;
+  font-size: 22px;
+}
+/* 防止锚点出现在fixed导航之下（暗锚） */
+.anchor {
+  position: relative;
+  top: -60px;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
