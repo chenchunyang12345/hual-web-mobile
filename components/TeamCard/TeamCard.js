@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import styles from "./TeamCard.module.css";
 class TeamCard extends Component {
+  componentDidMount() {
+    /* 创始团队 */
+    let teamItem = document.querySelectorAll(".team_item");
+    teamItem.forEach((item, index) => {
+      item.addEventListener("touchstart", () => {
+        item.className = item.className + " " + "team_item_hover";
+      });
+      item.addEventListener("touchend", () => {
+        item.className = item.className.split(" team_item_hover").join("");
+      });
+    });
+  }
   /* 换行 中间加"@$" */
   renderBr = (text) => {
     let result = text.split("@$");

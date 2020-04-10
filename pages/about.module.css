@@ -178,9 +178,9 @@
   height: 60px;
   border-radius: 3px;
   border: 1px solid rgba(85, 132, 255, 1);
+  margin: 40px 0;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 50px;
 }
 
 .contact_button a {

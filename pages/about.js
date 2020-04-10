@@ -66,23 +66,8 @@ class About extends Component {
     ],
   };
   componentDidMount() {
-    /* 创始团队 */
-    let teamItem = Array.prototype.slice.call(
-      document.querySelectorAll(".team_item")
-    );
-    teamItem.forEach((item, index) => {
-      item.addEventListener("touchstart", () => {
-        item.className = item.className + " " + "team_item_hover";
-      });
-      item.addEventListener("touchend", () => {
-        item.className = item.className.split(" team_item_hover").join("");
-      });
-    });
-
     /* 企业荣誉 */
-    let textPiece = Array.prototype.slice.call(
-      document.querySelectorAll(".text_piece")
-    );
+    let textPiece = document.querySelectorAll(".text_piece");
 
     let circularHover = document.querySelectorAll(".circular");
     let honorTextDate = document.querySelectorAll(".honor_text_date");
@@ -102,25 +87,6 @@ class About extends Component {
           .join("");
         honorTextDate[index].className = honorTextDate[index].className
           .split(" honor_text_date_hover")
-          .join("");
-      });
-    });
-
-    /* 加入我们 */
-    let buttonInto = Array.prototype.slice.call(
-      document.querySelectorAll(".button_into")
-    );
-    let button_into_a = document.querySelectorAll(".button_into_a");
-    buttonInto.forEach((item, index) => {
-      item.addEventListener("touchstart", () => {
-        item.className = item.className + " " + "button_into_hover";
-        button_into_a[index].className =
-          button_into_a[index].className + " " + "button_into_hover_a";
-      });
-      item.addEventListener("touchend", () => {
-        item.className = item.className.split(" button_into_hover").join("");
-        button_into_a[index].className = button_into_a[index].className
-          .split(" button_into_hover_a")
           .join("");
       });
     });
