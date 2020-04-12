@@ -1,0 +1,38 @@
+.nav_wrap {
+  width: 100vw;
+  height: 100px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav_placeholder {
+  width: 100vw;
+  height: 100px;
+}
+
+.nav_wrap h1 {
+  padding-left: 23px;
+  padding-top: 34px;
+}
+
+.nav_logo {
+  display: block;
+  width: 117px;
+  height: 32px;
+  background-image: url('/static/logo.png');
+  background-size: 100% 100%;
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+.nav_icon_wrap {
+  width: 30px;
+  height: 24px;
+  background-color: red;
+  position: absolute;
+  right: 30px;
+  top: 38px;
+  z-index: 999;
+}

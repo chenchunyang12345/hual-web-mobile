@@ -1,0 +1,64 @@
+.container {
+  width: 100vw;
+  height: 380px;
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+  --swiper-theme-color: #fff;
+  z-index: -1 !important;
+}
+
+.container h3 {
+  font-size: 40px;
+  line-height: 56px;
+  padding-top: 68px;
+}
+
+.item1 p:nth-child(2) {
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.item1 p:nth-child(3) {
+  width: 590px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.item2 p:nth-child(2) {
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.item2 ul li {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.item3 p:nth-child(2) {
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.item3 p:nth-child(3) {
+  width: 590px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.pagination :global(.swiper-pagination-bullet) {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.pagination :global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+}

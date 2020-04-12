@@ -1,0 +1,37 @@
+.cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 350px;
+  height: 324px;
+  background-color: orange;
+  border-radius:6px;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.card a {
+  position: absolute;
+  bottom: 26px;
+  left: 96px;
+}
+
+.card_title {
+  font-size: 30px;
+  line-height: 42px;
+  padding-top: 74px;
+  padding-bottom: 15px;
+}
+
+.card_desc {
+  font-size: 22px;
+  line-height: 30px;
+  white-space: pre-wrap;
+}
