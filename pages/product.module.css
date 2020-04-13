@@ -1,9 +1,10 @@
 .jishu {
   width: 750px;
   height: 380px;
-  background: url(../public/static/jishu_1.png)no-repeat center;
+  background: url('/static/jishu_1.png') no-repeat center;
   background-size: 100% 100%;
   overflow: hidden;
+  font-family: 'siyuan-medium';
 }
 
 .jishu_title {
@@ -20,7 +21,7 @@
 .jishu_text {
   font-size: 22px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 35px;
   text-align: center;
   margin-top: 20px;
@@ -33,6 +34,10 @@
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 40px;
+}
+
+.context_item :global(.anchor) {
+  top: -140px;
 }
 
 .context_text {

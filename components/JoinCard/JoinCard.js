@@ -12,7 +12,7 @@ class JoinCard extends Component {
         button_into_a[index].className =
           button_into_a[index].className + " " + "button_into_hover_a";
         join_card[index].className =
-          join_card[index].className + " " + "card-hover";
+          join_card[index].className + " " + "card_hover";
       });
       item.addEventListener("touchend", () => {
         item.className = item.className.split(" button_into_hover").join("");
@@ -20,7 +20,7 @@ class JoinCard extends Component {
           .split(" button_into_hover_a")
           .join("");
         join_card[index].className = join_card[index].className
-          .split(" card-hover")
+          .split(" card_hover")
           .join("");
       });
     });

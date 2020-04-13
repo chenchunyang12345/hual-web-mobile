@@ -30,12 +30,14 @@
   width: 100%;
   height: 25px;
   margin-top: 33px;
+  font-family: 'siyuan-medium';
 }
 
 .professor {
   width: 100%;
   height: 25px;
   margin-top: 5px;
+  font-family: 'siyuan-medium';
 }
 
 .position {

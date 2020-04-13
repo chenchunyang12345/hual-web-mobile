@@ -18,6 +18,9 @@ body {
   width: 100%;
   overflow-x: hidden;
   color: #333;
+  font-family: siyuan-normal, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+    sans-serif, Roboto, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 html,
@@ -27,15 +30,29 @@ body {
 
 /* 小标题 */
 h4 {
-  margin: 75px 0 55px;
+  margin: 40px 0 30px;
   text-align: center;
-  font-size: 22px;
+  font-size: 36px;
+  line-height: 50px;
+  font-family: 'siyuan-medium';
+}
+/* 更多按钮 */
+.more_btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #5584FF;
+  color: #3978FC;
+  border-radius: 3px;
+  font-size: 26px;
+  text-align: center;
 }
 
-/* 防止锚点出现在fixed导航之下（暗锚） */
+/* 暗锚 */
 .anchor {
   position: relative;
-  top: -60px;
+  top: -100px;
   display: block;
   height: 0;
   overflow: hidden;
@@ -72,7 +89,11 @@ h4 {
   color: rgba(255, 255, 255, 1) !important;
 }
 
-.card-hover{
+.button_into_hover_border {
+  border-color: rgba(85, 132, 255, 1) !important;
+}
+
+.card_hover {
   box-shadow: 0px 4px 32px -4px rgba(0, 120, 226, 0.4) !important;
 }
 

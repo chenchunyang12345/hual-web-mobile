@@ -1,0 +1,59 @@
+.cards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 350px;
+  height: 324px;
+  background-color: orange;
+  border-radius:6px;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+.bg1 {
+  background-image: url('/static/pro_bg1.png');
+}
+
+.bg2 {
+  background-image: url('/static/pro_bg2.png');
+}
+
+.bg3 {
+  background-image: url('/static/pro_bg3.png');
+}
+
+.bg4 {
+  background-image: url('/static/pro_bg4.png');
+}
+
+.card a {
+  position: absolute;
+  bottom: 26px;
+  left: 96px;
+}
+
+.card_title {
+  font-size: 30px;
+  line-height: 42px;
+  padding-top: 74px;
+  padding-bottom: 15px;
+}
+
+.card_desc {
+  font-size: 22px;
+  line-height: 30px;
+  white-space: pre-wrap;
+}
+
+.card :global(.more_btn) {
+  border-color: #fff;
+  color: #fff;
+}

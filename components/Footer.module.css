@@ -2,13 +2,16 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
+  background-image: url('/static/footer_bg.png');
+  background-size: 100% 100%;
 }
 
 .logo {
-  width: 143px;
-  height: 46px;
-  margin: 55px 0px 0 15px;
-  background-color: cornflowerblue;
+  width: 117px;
+  height: 32px;
+  margin: 55px 0px 0 23px;
+  background-image: url('/static/logo.png');
+  background-size: 100% 100%;
 }
 
 .introduce_text {
@@ -20,6 +23,13 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   line-height: 36px;
+}
+
+.gov {
+  display: block;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
 }
 
 .explain {

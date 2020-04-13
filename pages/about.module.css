@@ -1,9 +1,10 @@
 .jishu {
   width: 750px;
   height: 380px;
-  background: url(../public/static/jishu.png)no-repeat center;
+  background: url('/static/jishu.png') no-repeat center;
   background-size: 100% 100%;
   overflow: hidden;
+  font-family: 'siyuan-medium';
 }
 
 .jishu_title {
@@ -18,11 +19,11 @@
 }
 
 .jishu_text {
-  width: 630px;
+  width: 590px;
   height: 83px;
   font-size: 22px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 35px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -36,6 +37,7 @@
   line-height: 50px;
   text-align: center;
   margin-top: 40px;
+  font-family: 'siyuan-medium';
 }
 
 .text1 {
@@ -66,6 +68,10 @@
   margin-top: 40px;
   overflow: hidden;
   padding-bottom: 40px;
+}
+
+.honor_content a {
+  color: #1341A4;
 }
 
 .honor_item {
@@ -156,12 +162,12 @@
 
 .card_join {
   display: flex;
-  justify-content: center;
   margin-top: 55px;
   width: 690px;
   margin-left: 50%;
   transform: translateX(-50%);
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
 }
 
 .title2 {

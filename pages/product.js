@@ -12,6 +12,7 @@ class Product extends Component {
         </div>
         <div className={styles.context_item}>
           <div className={styles.context_text}>
+            <div className="anchor" id="p1"></div>
             <p className={styles.text_title}>AI培训</p>
             <p className={styles.text_container}>
               实战课程：先进AI 客户模拟方案，还原真实销售实战场景
@@ -39,6 +40,7 @@ class Product extends Component {
             alt=""
           />
           <div className={styles.context_text}>
+            <div className="anchor" id="p2"></div>
             <p className={styles.text_title}>保险行业知识化解决方案</p>
             <p className={styles.text_container}>
               智能投保解决方案：医疗知识图谱支撑轻量级保险投保预分析，有效降低从业人员医疗知识和投保要求理解成本
@@ -53,6 +55,7 @@ class Product extends Component {
         </div>
         <div className={styles.context_item}>
           <div className={styles.context_text}>
+            <div className="anchor" id="p3"></div>
             <p className={styles.text_title}>AI客服解决方案</p>
             <p className={styles.text_container}>
               多渠道入口：在线客服、人工客服、公众号、小程序、呼叫中心等多渠道统一管理和应对
@@ -80,7 +83,8 @@ class Product extends Component {
             alt=""
           />
           <div className={styles.context_text}>
-            <p className={styles.text_title}>AI培训</p>
+            <div className="anchor" id="p4"></div>
+            <p className={styles.text_title}>E-HR解决方案</p>
             <p className={styles.text_container}>
               人力管理系统：知识图谱支撑的员工问题解答，一键直达式考勤、查询、申请等业务办理
               <br />

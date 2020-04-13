@@ -3,6 +3,7 @@ import Layout from "../layout/layout";
 import styles from "./about.module.css";
 import TeamCard from "../components/TeamCard/TeamCard";
 import JoinCard from "../components/JoinCard/JoinCard";
+import Partner from '../components/Partner';
 
 class About extends Component {
   state = {
@@ -49,13 +50,14 @@ class About extends Component {
       },
     ],
     joinitem: [
-      {
-        text1: "Boss直聘",
-        portrait: "./static/boss.png",
-        text2: "华来BOSS直聘招聘主页",
-        buttonName: "进入平台",
-        url: "/",
-      },
+      // 暂时还没在boss上开通招聘
+      // {
+      //   text1: "Boss直聘",
+      //   portrait: "./static/boss.png",
+      //   text2: "华来BOSS直聘招聘主页",
+      //   buttonName: "进入平台",
+      //   url: "/",
+      // },
       {
         text1: "拉钩",
         portrait: "./static/lagou.png",
@@ -312,6 +314,11 @@ class About extends Component {
               </p>
             </div>
           </div>
+        </div>
+        {/* 优质客户 */}
+        <div>
+          <h4>我们合作的客户</h4>
+          <Partner />
         </div>
         <p className={styles.title1}>加入我们</p>
         <div className={styles.card_join}>
