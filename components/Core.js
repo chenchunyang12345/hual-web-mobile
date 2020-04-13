@@ -7,7 +7,7 @@ const DESC = ['智能语音', '企业知识图谱构建', '智能对话平台'];
 const CardItem = ({ content, idx }) => (
   <div className={styles.cardItem}>
     <img
-      src={`./static/core-bg${idx}.png`}
+      src={`./static/tec_bg${idx}.png`}
       className={styles[`bg${idx}`]}
       alt="技术logo"
     />

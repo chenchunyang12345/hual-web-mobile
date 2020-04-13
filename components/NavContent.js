@@ -5,19 +5,19 @@ import styles from './NavContent.module.css';
 const NAVLIST = [
   {
     name: '首页',
-    url: '/'
+    url: '/',
   },
   {
     name: '核心与技术',
-    url: '/technology'
+    url: '/technology',
   },
   {
-    name: '服务与产品',
-    url: '/product'
+    name: '产品与服务',
+    url: '/product',
   },
   {
     name: '关于我们',
-    url: '/about'
+    url: '/about',
   }
 ]
 
@@ -30,7 +30,7 @@ const NavContent = () => {
       {
         NAVLIST.map((item, idx) => (
         <li key={idx}>
-          <Link href={item.url}>
+          <Link href={`${process.env.path[`nav${++idx}`]}`}>
             <a className={item.url === pathname ? styles.choose : ''} >{item.name}</a>
           </Link>
         </li>

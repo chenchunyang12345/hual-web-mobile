@@ -25,10 +25,10 @@ const ITEM_CONTENT = [
 // 细分组件
 const PlanItem = ({ idx, detail }) => (
   <div className={`${styles.plan_item} ${styles['bg' + idx]}`}>
+      <div className="anchor" id={`t${idx}`}></div>
       <h5>{detail.title}</h5>
       <div className={styles.content}>
-        {/* <img src={`./static/plan-bg${idx}.png`} alt="流程图" /> */}
-        <img alt="流程图" />
+        <img src={`./static/plan_bg${idx}.png`} alt="流程图" />
         <p>{detail.content}</p>
     </div>
   </div>

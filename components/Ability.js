@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import styles from './Ability.module.css';
 
 // 常量
@@ -34,17 +35,35 @@ const CONTENT = [
   }
 ];
 // 单个卡片
-const Card = ({ content, idx }) => (
-  <div className={styles.card}>
-    <img
-      src={`./static/ability-img${idx}.png`}
-      className={styles[`bg${idx}`]}
-      // alt="能力图标"
-    />
-    <p className={styles.title}>{content.title}</p>
-    <p className={styles.desc}>{content.desc}</p>
-  </div>
-);
+class Card extends Component {
+
+  componentDidMount() {
+    let card = [...document.querySelectorAll(".card")];
+    card.forEach(item => {
+      item.addEventListener("touchstart", () => {
+        item.className = `${styles.card} card card_hover`;
+      });
+      item.addEventListener("touchend", () => {
+        item.className = `${styles.card} card`;
+      });
+    })
+  }
+
+  render() {
+    let { content, idx } = this.props;
+    return (
+      <div className={`${styles.card} card`}>
+        <img
+          src={`./static/ab_img${idx}.png`}
+          className={styles[`bg${idx}`]}
+          alt="能力图标"
+        />
+        <p className={styles.title}>{content.title}</p>
+        <p className={styles.desc}>{content.desc}</p>
+      </div>
+    )
+  }
+}
 
 // 整体
 const Ability = () => (

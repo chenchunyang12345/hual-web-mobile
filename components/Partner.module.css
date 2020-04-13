@@ -1,55 +1,88 @@
 .partner {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 50px;
+  overflow: hidden;
 }
 
-.item {
+.partner div {
   width: 256px;
   height: 130px;
-  background-color: orange;
+  /* background-color: orange; */
   margin-bottom: 40px;
 }
-.bg1 {
-  /* background-image: url('./static/company/.png'); */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+
+.partner div:nth-last-child(1),
+.partner div:nth-last-child(2) {
+  margin-bottom: 0;
 }
-.bg1 {
-  background-position: 10px 16px;
+
+.partner div img {
+  width: 334px;
+  height: 108px;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+  position: relative;
 }
+
+.bg1 {
+  left: 12px;
+  top: 50px;
+}
+
 .bg2 {
-  background-position: 16px 16px;
+  left: 20px;
+  top: 50px;
 }
+
 .bg3 {
-  background-position: 25px 12px;
+  left: 16px;
+  top: 36px;
 }
+
 .bg4 {
-  background-position: 18px 14px;
+  left: 56px;
+  top: 22px;
 }
+
 .bg5 {
-  background-position: 12px 8px;
+  left: 32px;
+  top: 34px;
 }
+
 .bg6 {
-  background-position: 40px 0px;
+  left: 0;
+  top: 24px;
 }
+
 .bg7 {
-  background-position: 26px 12px;
+  left: 36px;
+  top: 40px;
 }
+
 .bg8 {
-  background-position: 30px 8px;
+  left: 24px;
+  top: 38px;
 }
+
 .bg9 {
-  background-position: 24px 10px;
+  left: 38px;
+  top: 36px;
 }
+
 .bg10 {
-  background-position: 0px 2px;
+  left: 42px;
+  top: 32px;
 }
+
 .bg11 {
-  background-position: 16px 10px;
+  left: 22px;
+  top: 34px;
 }
+
 .bg12 {
-  background-position: 10px 2px;
+  left: 10px;
+  top: 26px;
 }

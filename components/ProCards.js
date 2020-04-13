@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import Link from 'next/link';
 import styles from './ProCards.module.css';
 
@@ -20,18 +21,38 @@ const CONTENT = [
     desc: '智能化人力知识管理和服务\n提高人力资源管理效率\n高效员工问题解答'
   }
 ];
+
 // 单个卡片
-const Card = ({ content, idx }) => (
-  <div className={`${styles.card} ${styles[`bg${idx}`]}`}>
-    <p className={styles.card_title}>{content.title}</p>
-    <p className={styles.card_desc}>{content.desc}</p>
-    <Link href={`${process.env.path.nav3}#p${idx}`}>
-      <a className="more_btn">
-        了解更多
-      </a>
-    </Link>
-  </div>
-);
+class Card extends Component {
+
+  componentDidMount() {
+    // 该页面中所有的具有more_btn类名的都会加上这些事件
+    let btns = [...document.querySelectorAll(".more_btn")];
+    btns.forEach(item => {
+      item.addEventListener("touchstart", () => {
+        item.className = 'more_btn button_into_hover button_into_hover_a button_into_hover_border';
+      });
+      item.addEventListener("touchend", () => {
+        item.className = 'more_btn';
+      });
+    })
+  }
+
+  render() {
+    let { content, idx } = this.props;
+    return (
+      <div className={`${styles.card} ${styles[`bg${idx}`]}`}>
+        <p className={styles.card_title}>{content.title}</p>
+        <p className={styles.card_desc}>{content.desc}</p>
+        <Link href={`${process.env.path.nav3}#p${idx}`}>
+          <a className="more_btn">
+            了解更多
+          </a>
+        </Link>
+      </div>
+    )
+  }
+}
 
 // 整体
 const ProCards = () => (

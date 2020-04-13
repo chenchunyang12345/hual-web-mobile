@@ -28,7 +28,18 @@ class Nav extends Component {
             </a>
           </h1>
           <div className={styles.nav_icon_wrap} onClick={this.handleClick}>
-            <div className={styles.nav_icon}></div>
+            {
+              navVisible ? (
+                <div className={styles.nav_icon_close}></div>
+              ) : (
+                <div className={styles.nav_icon_line_wrap}>
+                  <div className={styles.nav_icon_line}></div>
+                  <div className={styles.nav_icon_line}></div>
+                  <div className={styles.nav_icon_line}></div>
+                </div>
+              )
+            }
+            
           </div>
           {navVisible ? <NavContent /> : null}
         </div>

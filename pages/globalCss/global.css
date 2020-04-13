@@ -1,26 +1,40 @@
 a {
   text-decoration: none;
   color: blue;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   overflow-x: hidden;
   color: #333;
+  font-family: siyuan-normal, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+    sans-serif, Roboto, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
-html,body{
+
+html,
+body {
   height: 100%;
 }
+
 /* 小标题 */
 h4 {
   margin: 40px 0 30px;
   text-align: center;
   font-size: 36px;
   line-height: 50px;
+  font-family: 'siyuan-medium';
 }
 /* 更多按钮 */
 .more_btn {
@@ -35,7 +49,55 @@ h4 {
   text-align: center;
 }
 
-.more_btn:active {
-  background-color: #5584FF;
-  color: #fff;
+/* 暗锚 */
+.anchor {
+  position: relative;
+  top: -100px;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* 关于我们创始团队点击事件 */
+.team_item_hover {
+  box-shadow: 0px 4px 32px -4px rgba(0, 120, 226, 0.4) !important;
+}
+
+/* 关于我们时间轴的点击事件 */
+.text_piece_hover {
+  background: linear-gradient(180deg,
+      rgba(196, 219, 255, 0.1) 0%,
+      rgba(146, 180, 254, 0.1) 100%) !important;
+  border-radius: 6px !important;
+}
+
+.circular_hover {
+  background: rgba(57, 120, 252, 1) !important;
+}
+
+.honor_text_date_hover {
+  color: rgba(57, 120, 252, 1) !important;
+}
+
+/* 关于我们卡片点击事件 */
+
+.button_into_hover {
+  background: rgba(85, 132, 255, 1);
+}
+
+.button_into_hover_a {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.button_into_hover_border {
+  border-color: rgba(85, 132, 255, 1) !important;
+}
+
+.card_hover {
+  box-shadow: 0px 4px 32px -4px rgba(0, 120, 226, 0.4) !important;
+}
+
+/* Footer点击事件 */
+.mail_link_hover {
+  text-decoration: underline;
 }

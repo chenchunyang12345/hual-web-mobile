@@ -30,24 +30,31 @@
 .head_nav ul li a::before {
   content: '';
   width: 100%;
-  background-color: red;
+  background-size: 100% 100%;
 }
 
 .head_nav ul li:nth-child(1) a::before {
   height: 163px;
   margin-bottom: 37px;
+  background-image: url('/static/nav_img1.png');
 }
 
 .head_nav ul li:nth-child(3) a::before {
   height: 173px;
   margin-bottom: 27px;
+  background-image: url('/static/nav_img2.png');
 }
 
 .head_nav ul li:nth-child(5) a::before {
   height: 169px;
   margin-bottom: 31px;
+  background-image: url('/static/nav_img3.png');
 }
 
 .tec {
   padding-top: 20px;
+}
+
+.cli {
+  padding-bottom: 40px;
 }

@@ -6,7 +6,7 @@ class MySwiper extends Component {
   componentDidMount() {
     new Swiper('.swiper-container', {
       loop: true,
-      autoplay: false,
+      autoplay: true,
       pagination: {
         el: '.swiper-pagination',
       },

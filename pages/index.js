@@ -42,12 +42,12 @@ class Home extends Component {
           <Core />
         </div>
         {/* 服务和产品展示 */}
-        <div className="pro">
+        <div className={styles.pro}>
           <h4>服务和产品展示</h4>
           <ProCards />
         </div>
         {/* 优质客户 */}
-        <div className="cli">
+        <div className={styles.cli}>
           <h4>优质客户</h4>
           <Partner />
         </div>
