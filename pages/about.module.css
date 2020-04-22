@@ -13,20 +13,17 @@
   color: rgba(255, 255, 255, 1);
   line-height: 56px;
   text-align: center;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   margin-top: 105px;
 }
 
 .jishu_text {
-  width: 590px;
   height: 83px;
   font-size: 22px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
   line-height: 35px;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -40,14 +37,17 @@
   font-family: 'siyuan-medium';
 }
 
-.text1 {
+.introduce {
+  width: 100%;
+}
+
+.text1_introduce {
   width: 690px;
+  margin: 0 auto;
   font-size: 26px;
   font-weight: 400;
   color: rgba(68, 68, 68, 1);
   line-height: 42px;
-  margin-left: 50%;
-  transform: translateX(-50%);
   text-align: center;
   margin-top: 30px;
 }
@@ -58,8 +58,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
 }
 
 .honor_content {
