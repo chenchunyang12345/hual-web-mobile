@@ -19,7 +19,7 @@ class MySwiper extends Component {
         <div className="swiper-wrapper">
           <div className={`${styles.item1} swiper-slide`}>
             <h3>华来知识</h3>
-            <p>行业领先的AI语音语音技术服务提供商</p>
+            <p>行业领先的AI语音技术服务提供商</p>
             <p>
               致力于利用知识图谱、语义理解技术，结合行业数据，打造行业智能生态环境，为企业AI创新赋能。
             </p>
@@ -28,7 +28,7 @@ class MySwiper extends Component {
             <h3>华来知识</h3>
             <p>成熟的ToB AI解决方案</p>
             <ul>
-              <li>智能语义平台</li>
+              <li>智能语音平台</li>
               <li>智能对话系统</li>
               <li>企业知识图谱构建</li>
               <li>声纹识别管理和应用平台</li>

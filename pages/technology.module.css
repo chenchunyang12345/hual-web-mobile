@@ -1,0 +1,28 @@
+.tec_banner {
+  width: 100vw;
+  height: 380px;
+  background-image: url('/static/tec_banner.png');
+  background-size: 100% 100%;
+  background-color: #000;
+}
+
+.tec_banner p {
+  width: 590px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.tec_banner p:nth-child(1) {
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 102px;
+  padding-bottom: 10px;
+  font-family: 'siyuan-medium';
+}
+
+.tec_banner p:nth-child(2) {
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  color: rgba(255, 255, 255, .8);
+}

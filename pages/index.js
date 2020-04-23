@@ -18,19 +18,19 @@ class Home extends Component {
         <div className={styles.head_nav}>
           <ul>
             <li>
-              <Link href="/technology">
+              <Link href={`${process.env.path.nav2}`}>
                 <a>核心与技术</a>
               </Link>
             </li>
             <li></li>
             <li>
-              <Link href="/product">
+              <Link href={`${process.env.path.nav3}`}>
                 <a>产品服务</a>
               </Link>
             </li>
             <li></li>
             <li>
-              <Link href="/about">
+              <Link href={`${process.env.path.nav4}`}>
                 <a>关于我们</a>
               </Link>
             </li>

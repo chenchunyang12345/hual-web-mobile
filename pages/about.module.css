@@ -2,6 +2,7 @@
   width: 750px;
   height: 380px;
   background: url('/static/jishu.png') no-repeat center;
+  background-color: #000;
   background-size: 100% 100%;
   overflow: hidden;
   font-family: 'siyuan-medium';
@@ -9,7 +10,6 @@
 
 .jishu_title {
   font-size: 40px;
-  font-weight: 500;
   color: rgba(255, 255, 255, 1);
   line-height: 56px;
   text-align: center;
@@ -20,7 +20,6 @@
 .jishu_text {
   height: 83px;
   font-size: 22px;
-  font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
   line-height: 35px;
   text-align: center;
@@ -29,7 +28,6 @@
 
 .title1 {
   font-size: 36px;
-  font-weight: 500;
   color: rgba(51, 51, 51, 1);
   line-height: 50px;
   text-align: center;
@@ -43,9 +41,9 @@
 
 .text1_introduce {
   width: 690px;
+  height: 294px;
   margin: 0 auto;
   font-size: 26px;
-  font-weight: 400;
   color: rgba(68, 68, 68, 1);
   line-height: 42px;
   text-align: center;
@@ -145,7 +143,6 @@
 
 .public_title1 {
   font-size: 26px;
-  font-weight: 400;
   color: rgba(51, 51, 51, 1);
   line-height: 42px;
   padding-bottom: 20px;
@@ -153,7 +150,6 @@
 
 .honor_text_date {
   font-size: 28px;
-  font-weight: 500;
   color: rgba(102, 102, 102, 1);
   line-height: 34px;
   margin-top: 5px;
@@ -171,7 +167,6 @@
 
 .title2 {
   font-size: 30px;
-  font-weight: 500;
   color: rgba(51, 51, 51, 1);
   line-height: 42px;
   text-align: center;
@@ -193,7 +188,6 @@
   width: 100%;
   height: 100%;
   font-size: 26px;
-  font-weight: 400;
   color: rgba(57, 120, 252, 1);
   line-height: 58px;
   text-align: center;
