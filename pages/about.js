@@ -3,7 +3,7 @@ import Layout from "../layout/layout";
 import styles from "./about.module.css";
 import TeamCard from "../components/TeamCard/TeamCard";
 import JoinCard from "../components/JoinCard/JoinCard";
-import Partner from '../components/Partner';
+import Partner from "../components/Partner";
 
 class About extends Component {
   state = {
@@ -105,9 +105,12 @@ class About extends Component {
           </p>
         </div>
         <p className={styles.title1}>我们是谁</p>
-        <p className={styles.text1}>
-          华来知识创立于2018年，由清华大学教授朱小燕、戴海生博士共同创办。核心技术团队来自清华大学智能技术与系统国家重点实验室及Google、腾讯、百度、搜狗等国内外知名机构及互联网企业，团队有长期的相关技术经验和积累，并已和多个知名企业开展合作。华来知识立志于利用知识图谱、语义理解技术，结合行业数据，打造行业智能生态环境，通过智能为企业赋能。
-        </p>
+        <div className={styles.introduce}>
+          <p className={styles.text1_introduce}>
+            华来知识创立于2018年，由清华大学教授朱小燕、戴海生博士共同创办。核心技术团队来自清华大学智能技术与系统国家重点实验室及Google、腾讯、百度、搜狗等国内外知名机构及互联网企业，团队有长期的相关技术经验和积累，并已和多个知名企业开展合作。华来知识立志于利用知识图谱、语义理解技术，结合行业数据，打造行业智能生态环境，通过智能为企业赋能。
+          </p>
+        </div>
+
         <p className={styles.title1}>创始团队</p>
         <div className={styles.team_content}>
           {/*    换行中间加 @$   */}
@@ -133,7 +136,7 @@ class About extends Component {
                 情感文本内容识别和计算，实现对象相关内容的情感分布，该专利已被三星收购，三星市场部目前正应用该系统分析其产品的用户体验动态变化
                 <br />
                 <br />
-                社交媒体问答数据的挖掘和应用能力持续提升，并与各B端客户合作应用到对话系统设计中，例如音乐查询、大众健康问答、餐饮对话等相关领域的查询和问答系统。
+                社交媒体问答数据的挖掘和应用能力持续提升，并与各B端客户合作应用到对话系统设计中，例如音乐查询、大众健康问答、餐饮对话等相关领域的查询和问答系统
               </p>
             </div>
             <div className={styles.honor_center}>
@@ -214,7 +217,7 @@ class About extends Component {
             </div>
             <div className={styles.honor_text}>
               <p className={`${styles.public_title1} text_piece`}>
-                <a>开始知识图谱的研究</a>
+                <a>开始知识图谱的研究。</a>
               </p>
             </div>
           </div>
@@ -227,7 +230,7 @@ class About extends Component {
                 获得加拿大政府的国际开发研究中心（IDRC）的
                 <a>首席科学家基金（IRCI）</a>
                 资助的项目（5+2年，共100+30万加元），同时
-                <a>朱小燕本人获得加拿大国际首席科学家称号。</a>
+                <a>朱小燕本人获得加拿大国际首席科学家称号</a>
                 <br />
                 <br />
                 开始研究<a>中文开放域无约束问答系统</a>
