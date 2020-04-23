@@ -21,7 +21,7 @@ class Footer extends Component {
       <div className={styles.footer}>
         <div className={styles.logo}></div>
         <p className={styles.introduce_text}>
-          行业领先的AI语音语音技术服务提供商。
+          行业领先的AI语音技术服务提供商。
           <br />
           致力于利用知识图谱、语义理解技术，结合行业数据，
           打造行业智能生态环境，为企业AI创新赋能。

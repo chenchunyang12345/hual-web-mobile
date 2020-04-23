@@ -7,7 +7,7 @@ class Product extends Component {
     return (
       <Layout title="华来知识 - 产品与服务">
         <div className={styles.jishu}>
-          <p className={styles.jishu_title}>华来科技</p>
+          <p className={styles.jishu_title}>华来知识</p>
           <p className={styles.jishu_text}>产品与服务</p>
         </div>
         <div className={styles.context_item}>
