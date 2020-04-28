@@ -69,7 +69,7 @@ class Footer extends Component {
                 <a className={styles.subhead}>保险行业知识化解决方案</a>
               </Link>
               <Link href={`${process.env.path.nav3}#p3`}>
-                <a className={styles.subhead}>ai客服服务方案</a>
+                <a className={styles.subhead}>AI客服服务方案</a>
               </Link>
               <Link href={`${process.env.path.nav3}#p4`}>
                 <a className={styles.subhead}>EHR</a>
